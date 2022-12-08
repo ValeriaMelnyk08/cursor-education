@@ -7,43 +7,54 @@
 
 
  // Max number
- console.log(Math.max(bread_priсe, eggs_priсe, meat_price ))
+ let max_price_goods = Math.max(bread_priсe, eggs_priсe, meat_price );
+ console.log (`Максимальне значення: ${max_price_goods}`);
+ document.writeln('<li>',`Mаксимальне значення:${max_price_goods}`,'</li>');
+
 
  // Min number
- console.log(Math.min(bread_priсe, eggs_priсe, meat_price ))
+ let min_price_goods = Math.min(bread_priсe, eggs_priсe, meat_price );
+ console.log (`Мінімальне значення: ${max_price_goods}`);
+ document.writeln('<li>',`Мінімальне значення:${max_price_goods}`,'</li>');
 
  // Full price with creating variables
 const full_price = bread_priсe +  eggs_priсe + meat_price;
-console.log(full_price);
+console.log (`Вся сума товарів: ${full_price}`);
+document.writeln('<li>',`Вся сума товарів:${full_price}`,'</li>');
 
 // Rounding numbers down 
 bread_priсe = Math.floor(bread_priсe);
 eggs_priсe = Math.floor(eggs_priсe);
 meat_price = Math.floor(meat_price);
 
-console.log(bread_priсe);
-console.log(eggs_priсe);
-console.log(meat_price);
+
 
 let full_price_without_balance = bread_priсe +  eggs_priсe + meat_price;
-console.log(full_price_without_balance);
+console.log (`Ціна всіх товарів без копійок: ${full_price_without_balance}`);
+document.writeln('<li>',`Ціна всіх товарів без копійок:${full_price_without_balance}`,'</li>');
 
 // Rounding up to a hundred 
-full_price_without_balance = Math.round(full_price_without_balance/100) * 100;
-console.log(full_price_without_balance);
+full_price_to_hundred = Math.round(full_price_without_balance/100) * 100;
+console.log (`Округлення товарів до сотні: ${full_price_to_hundred}`);
+document.writeln('<li>',`Округлення товарів до сотні:${full_price_to_hundred}`,'</li>');
 
 // Boolean 
 const is_even = full_price_without_balance % 2 == 0;
-console.log(is_even);
+console.log (`Булеве значення: ${is_even}`);
+document.writeln('<li>',`Булеве значення:${is_even}`,'</li>');
 
 // Change from  500
-console.log (500 - full_price);
+let change_for_customer = 500 - full_price;
+console.log (`Решта для покупця: ${change_for_customer}`);
+document.writeln('<li>',`Решта для покупця:${change_for_customer}`,'</li>');
+
 
 // Average price 
 
 let averege_price = full_price / 3;
 let round_number = Math.round (averege_price * 100) / 100;
-console.log(round_number);
+console.log (`Середнє значення: ${round_number}`);
+document.writeln('<li>',`Середнє значення:${round_number}`,'</li>');
 
 //======================================================================================================================================================
 // Random 
@@ -57,7 +68,8 @@ document.writeln('<li>',`Випадкова знижка: ${create_random_number
 // Price for customer
 
 let price_discount = full_price - (full_price * (create_random_number / 100));
-console.log(price_discount);
+console.log (`Ціна із знижкою: ${price_discount}`);
+document.writeln('<li>',`Ціна із знижкою:${price_discount}`,'</li>');
 
 let round_number_discount = Math.round (price_discount * 100) / 100;
 console.log(`Сума до оплати зі знижкою: ${round_number_discount}`);
