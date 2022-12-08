@@ -33,7 +33,7 @@ full_price_without_balance = Math.round(full_price_without_balance/100) * 100;
 console.log(full_price_without_balance);
 
 // Boolean 
-const is_even = full_price_without_balance % 2 == 1;
+const is_even = full_price_without_balance % 2 == 0;
 console.log(is_even);
 
 // Change from  500
