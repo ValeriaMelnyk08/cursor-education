@@ -51,7 +51,8 @@ const a = Math.random();
 const min = 1;
 const max = 100;
 const create_random_number = Math.floor((max - min)* a + min);
-console.log(create_random_number);
+console.log( `Випадкова знижка: ${create_random_number}`);
+document.writeln('<li>',`Випадкова знижка: ${create_random_number}`,'</li>')
 
 // Price for customer
 
@@ -59,14 +60,15 @@ let price_discount = full_price - (full_price * (create_random_number / 100));
 console.log(price_discount);
 
 let round_number_discount = Math.round (price_discount * 100) / 100;
-console.log(round_number_discount);
+console.log(`Сума до оплати зі знижкою: ${round_number_discount}`);
+document.writeln('<li>',`Сума до оплати зі знижкою: ${round_number_discount}`,'</li>')
 
 // Profit
 let cost_of_goods = full_price / 2;
 
 let net_profit = Math.floor ( cost_of_goods - round_number_discount);
-console.log(net_profit);
-
+console.log(`Чистий прибуток: ${net_profit}`);
+document.writeln('<li>',`Чистий прибуток складає: ${net_profit}`,'</li>')
 
 
 
