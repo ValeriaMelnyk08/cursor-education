@@ -53,7 +53,7 @@ function countLetter (letter, string) {
   return count;
 };
 
-document.writeln('<li>',`Повторення одинакових літер в слові "Багатонаціональних":  ${countLetter ("а", "Багатонаціональних")} )`,'</li>');
+document.writeln('<li>',`Повторення літери "а" в слові "Багатонаціональних":  ${countLetter ("а", "Багатонаціональних")} )`,'</li>');
 
 //==============================================================================================================================================================================
 
@@ -64,7 +64,7 @@ function deleteLetters( string) {
    return newStr;
 }
 
-document.writeln('<li>',`Видалення літер із слова "blablabla")  ${deleteLetters ( "blablabla")} )`,'</li>');
+document.writeln('<li>',`Видалення літер "a" із слова "blablabla")  ${deleteLetters ( "blablabla")} )`,'</li>');
 
 
 
