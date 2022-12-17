@@ -8,23 +8,24 @@ function getMaxDigit(number) {
 };
 
 let result = getMaxDigit(1285476);
-console.log( result);
+
 
 document.writeln('<li>',`Найбільша цифра в числі: 1285476 є ${result})`,'</li>');
 
 //======================================================Завдання 3================================================================================================
 function capitalizeFirstLetter(str) {
+   str = str.toLowerCase();
     return str[0].toUpperCase() + str.slice(1);//.toUpperCase() повертає значення використовуючи великі букви // .slice() вибрає з startдо end ( endне включено)
   }
 
-  let result2 = capitalizeFirstLetter('микола! ');
-  console.log(result2);
-  document.writeln('<li>',`Велика буква в слові:  ${result2})`,'</li>');
+  let result2 = capitalizeFirstLetter('мИКОла! ');
+
+  document.writeln('<li>',`Велика буква в слові мИКОла! є:  ${result2})`,'</li>');
  
 //==========================================================Завдання 5=====================================================================================================
 
 function getRandomInt(n, m) {
-    min = Math.ceil(n); // Math.ceil() вжди округлює в більшу сторону та повертає менше ціле число, більше або дорівнює заданому числу.
+    min = Math.ceil(n); // Math.ceil()  округлює в більшу сторону та повертає менше ціле число, більше або дорівнює заданому числу.
     max = Math.floor(m);
     return Math.floor(Math.random() * (m - n + 1)) + n;}
 
@@ -39,7 +40,7 @@ function salaryExcludingTax (sum) {
   let alltax = sum - sum * tax;
   return alltax;
 }
-document.writeln('<li>',`Податок від 1500 грн податку є:  ${salaryExcludingTax (1500)} )`,'</li>');
+document.writeln('<li>',`Податок від 1500 грн ЗП є:  ${salaryExcludingTax (1500)} )`,'</li>');
 
 //=============================================Завдання 6================================================================================================
 function countLetter (letter, string) {
@@ -53,18 +54,18 @@ function countLetter (letter, string) {
   return count;
 };
 
-document.writeln('<li>',`Повторення літери "а" в слові "Багатонаціональних":  ${countLetter ("а", "Багатонаціональних")} )`,'</li>');
+document.writeln('<li>',`Повторення літери "а" в слові "Багатонаціональних"  результат:  ${countLetter ("а", "Багатонаціональних")} )`,'</li>');
 
-//==============================================================================================================================================================================
+//===========================================================Завдання 11===================================================================================================================
 
-function deleteLetters( string) {
+function deleteLetters( letter, string) {
   
-  string = string.toLowerCase();
-   let newStr = string.replaceAll('a','')
+ 
+   let newStr = string.replaceAll(letter,'')
    return newStr;
 }
 
-document.writeln('<li>',`Видалення літер "a" із слова "blablabla")  ${deleteLetters ( "blablabla")} )`,'</li>');
+document.writeln('<li>',`Видалення літери "a" із слова "blablablablablaby" результат:  ${deleteLetters ("a", "blablablablablaby")} )`,'</li>');
 
 
 
