@@ -45,6 +45,7 @@ function getMarks (names, marks) {
 console.log(getMarks(marks,students));
 
 //======================================Випадкова оцінка ===============================================================================================================================
+
 function randomMarks (array) {
   let result = [];
   for (i = 0; i < array.length; i++){
@@ -55,6 +56,7 @@ function randomMarks (array) {
 }
 
 console.log(randomMarks(pairsTheme(themes, getPairs(students))));
+//
 
 
 
