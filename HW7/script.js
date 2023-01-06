@@ -36,4 +36,4 @@ function getMySalary(country) {
     return salaryTaxProfit;
 }
 
-setInterval(() => console.log(getMySalary(latvia)),1000);
+setInterval(() => console.log(getMySalary(latvia)),10000);
