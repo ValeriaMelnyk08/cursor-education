@@ -4,7 +4,7 @@ window.addEventListener('keydown', function(e){
     const button = document.querySelector(`.button[data-key="${e.keyCode}"]`);
 
     if(!audio) return;//зупиняє роботу всіх функцій разом
-    audio.pause();
+    
     audio.currentTime = 0;//перемотує назад
     audio.play();
     button.classList.add('playing');
